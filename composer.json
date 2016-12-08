@@ -1,0 +1,29 @@
+{
+    "name": "nordsoftware/lumen-chained-exception-handler",
+    "description": "A chained exception handler for the Lumen framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sam Stenvall",
+            "email": "sam.stenvall@nordsoftware.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/support": "^5.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nord\\Lumen\\ChainedExceptionHandler\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nord\\Lumen\\ChainedExceptionHandler\\Tests\\": "tests/"
+        }
+    }
+}

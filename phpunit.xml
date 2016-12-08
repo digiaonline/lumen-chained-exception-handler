@@ -1,0 +1,12 @@
+<phpunit>
+    <testsuites>
+        <testsuite name="nordsoftware/lumen-chained-exception-handler">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">src/</directory>
+        </whitelist>
+    </filter>
+</phpunit>
