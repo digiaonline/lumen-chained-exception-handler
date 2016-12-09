@@ -35,6 +35,19 @@ The constructor takes two parameters, a primary exception handler and an optiona
 `report()` method will be called on all handlers, but the `render()` and `renderForConsole()` methods will only be 
 called on the primary handler.
 
+For example, if want to use the default `Laravel\Lumen\Exceptions\Handler` as your primary error handler and 
+`Foo\Bar\ExceptionHandler` and `Baz\ExceptionHandler` as secondary exception handlers, you would use this:
+
+```php
+$app->instance(
+    Illuminate\Contracts\Debug\ExceptionHandler::class,
+    new Nord\Lumen\ChainedExceptionHandler\ChainedExceptionhandler(
+        new Laravel\Lumen\Exceptions\Handler(),
+        [new Foo\Bar\ExceptionHandler(), new Baz\ExceptionHandler()]
+    )
+);
+```
+
 ## Running tests
 
 Clone the project and install its dependencies by running:
