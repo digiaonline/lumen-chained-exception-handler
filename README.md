@@ -1,5 +1,9 @@
 # lumen-chained-exception-handler
 
+[![Build Status](https://travis-ci.org/nordsoftware/lumen-chained-exception-handler.svg?branch=travis)](https://travis-ci.org/nordsoftware/lumen-chained-exception-handler)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nordsoftware/lumen-chained-exception-handler/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nordsoftware/lumen-chained-exception-handler/?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/nordsoftware/lumen-chained-exception-handler/badge.svg?branch=travis)](https://coveralls.io/github/nordsoftware/lumen-chained-exception-handler?branch=travis)
+
 This utility allows you to chain together multiple exception handlers in your Lumen application. This can be useful if 
 you want to use the rendering capabilities of the default exception handler, but you want to use the reporting logic 
 from a third-party exception handler. The reporting logic can usually be extended by adding another Monolog handler, 
