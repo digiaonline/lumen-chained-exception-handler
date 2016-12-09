@@ -19,10 +19,11 @@ composer require nordsoftware/lumen-chained-exception-handler
 
 ## Usage
 
-Add the following lines to ```bootstrap/app.php```:
+Replace the `$app->singleton()` call which registers the concrete exception handler in `bootstrap/app.php` with the 
+following:
 
 ```php
-$app->singleton(
+$app->instance(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
     new Nord\Lumen\ChainedExceptionHandler\ChainedExceptionhandler(
         new App\Exceptions\Handler()
