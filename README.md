@@ -1,9 +1,9 @@
 # lumen-chained-exception-handler
 
-[![Build Status](https://travis-ci.org/nordsoftware/lumen-chained-exception-handler.svg?branch=travis)](https://travis-ci.org/nordsoftware/lumen-chained-exception-handler)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nordsoftware/lumen-chained-exception-handler/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nordsoftware/lumen-chained-exception-handler/?branch=master)
-[![Coverage Status](https://coveralls.io/repos/github/nordsoftware/lumen-chained-exception-handler/badge.svg?branch=travis)](https://coveralls.io/github/nordsoftware/lumen-chained-exception-handler?branch=travis)
-[![Code Climate](https://codeclimate.com/github/nordsoftware/lumen-chained-exception-handler/badges/gpa.svg)](https://codeclimate.com/github/nordsoftware/lumen-chained-exception-handler)
+[![Build Status](https://travis-ci.org/digiaonline/lumen-chained-exception-handler.svg?branch=travis)](https://travis-ci.org/digiaonline/lumen-chained-exception-handler)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/digiaonline/lumen-chained-exception-handler/badges/quality-score.png?b=develop)](https://scrutinizer-ci.com/g/digiaonline/lumen-chained-exception-handler/?branch=develop)
+[![Coverage Status](https://coveralls.io/repos/github/digiaonline/lumen-chained-exception-handler/badge.svg?branch=develop)](https://coveralls.io/github/digiaonline/lumen-chained-exception-handler?branch=develop)
+[![Code Climate](https://codeclimate.com/github/digiaonline/lumen-chained-exception-handler/badges/gpa.svg)](https://codeclimate.com/github/digiaonline/lumen-chained-exception-handler)
 
 This utility allows you to chain together multiple exception handlers in your Lumen application. This can be useful if 
 you want to use the rendering capabilities of the default exception handler, but you want to use the reporting logic 
