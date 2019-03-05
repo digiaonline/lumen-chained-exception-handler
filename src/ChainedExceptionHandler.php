@@ -66,4 +66,12 @@ class ChainedExceptionHandler implements ExceptionHandler
         $this->primaryHandler->renderForConsole($output, $e);
     }
 
+    /**
+     * @inheritdoc
+     */
+    public function shouldReport(Exception $e)
+    {
+        $this->primaryHandler->shouldReport($e);
+    }
+    
 }
