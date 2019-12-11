@@ -83,7 +83,6 @@ class ChainedExceptionHandlerTest extends \PHPUnit_Framework_TestCase
     private function getMockedHandler()
     {
         return $this->getMockBuilder(ExceptionHandler::class)
-                    ->setMethods(['report', 'render', 'renderForConsole'])
                     ->getMock();
     }
 
