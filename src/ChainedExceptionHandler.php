@@ -2,7 +2,6 @@
 
 namespace Nord\Lumen\ChainedExceptionHandler;
 
-use Exception;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 
 /**
@@ -39,7 +38,7 @@ class ChainedExceptionHandler implements ExceptionHandler
     /**
      * @inheritdoc
      */
-    public function report(Exception $e)
+    public function report(\Throwable $e)
     {
         $this->primaryHandler->report($e);
 
@@ -52,7 +51,7 @@ class ChainedExceptionHandler implements ExceptionHandler
     /**
      * @inheritdoc
      */
-    public function render($request, Exception $e)
+    public function render($request, \Throwable $e)
     {
         return $this->primaryHandler->render($request, $e);
     }
@@ -61,7 +60,7 @@ class ChainedExceptionHandler implements ExceptionHandler
     /**
      * @inheritdoc
      */
-    public function renderForConsole($output, Exception $e)
+    public function renderForConsole($output, \Throwable $e)
     {
         $this->primaryHandler->renderForConsole($output, $e);
     }
@@ -69,7 +68,7 @@ class ChainedExceptionHandler implements ExceptionHandler
     /**
      * @inheritdoc
      */
-    public function shouldReport(Exception $e)
+    public function shouldReport(\Throwable $e)
     {
         $this->primaryHandler->shouldReport($e);
     }
