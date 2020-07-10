@@ -4,12 +4,13 @@ namespace Nord\Lumen\ChainedExceptionHandler\Tests;
 
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Nord\Lumen\ChainedExceptionHandler\ChainedExceptionHandler;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Class ChainedExceptionHandlerTest
  * @package Nord\Lumen\ChainedExceptionHandler\Tests
  */
-class ChainedExceptionHandlerTest extends \PHPUnit_Framework_TestCase
+class ChainedExceptionHandlerTest extends TestCase
 {
 
     /**
