@@ -1,8 +1,8 @@
 # lumen-chained-exception-handler
 
 [![GitHub Actions status](https://github.com/digiaonline/lumen-chained-exception-handler/workflows/Test/badge.svg)](https://github.com/digiaonline/lumen-chained-exception-handler/actions)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/digiaonline/lumen-chained-exception-handler/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/digiaonline/lumen-chained-exception-handler/?branch=master)
-[![Coverage Status](https://coveralls.io/repos/github/digiaonline/lumen-chained-exception-handler/badge.svg?branch=master)](https://coveralls.io/github/digiaonline/lumen-chained-exception-handler?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/digiaonline/lumen-chained-exception-handler/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/digiaonline/lumen-chained-exception-handler/?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/digiaonline/lumen-chained-exception-handler/badge.svg?branch=main)](https://coveralls.io/github/digiaonline/lumen-chained-exception-handler?branch=main)
 [![Code Climate](https://codeclimate.com/github/digiaonline/lumen-chained-exception-handler/badges/gpa.svg)](https://codeclimate.com/github/digiaonline/lumen-chained-exception-handler)
 
 This utility allows you to chain together multiple exception handlers in your Lumen application. This can be useful if 
